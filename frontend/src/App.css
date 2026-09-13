@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #eef2f7;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+.task-form {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+  margin-bottom: 25px;
+}
+
+.task-form input,
+.task-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  transition: .3s;
+}
+
+.task-form input:focus,
+.task-form textarea:focus {
+  border-color: #2563eb;
+}
+
+.task-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.task-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.task-form button:hover {
+  background: #1d4ed8;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+  transition: .25s;
+}
+
+.task-card:hover {
+  transform: translateY(-3px);
+}
+
+.task-info {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+}
+
+.task-info input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.task-info h3 {
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.task-info p {
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.actions button {
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.edit-btn {
+  background: #f59e0b;
+}
+
+.edit-btn:hover {
+  background: #d97706;
+}
+
+.delete-btn {
+  background: #ef4444;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+.empty {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  color: gray;
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
+@media (max-width: 700px) {
+
+  .container {
+    padding: 15px;
+  }
+
+  .task-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .actions {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .actions button {
+    flex: 1;
+  }
+
+}

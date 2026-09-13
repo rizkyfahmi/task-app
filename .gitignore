@@ -1,0 +1,25 @@
+# Node modules
+node_modules/
+*/node_modules/
+
+# Build & Dist
+dist/
+*/dist/
+build/
+*/build/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# Editor & OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Vite
+.vite/
+*/.vite/
